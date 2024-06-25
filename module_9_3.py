@@ -9,11 +9,13 @@ class EvenNumbers():
         return self
 
     def __next__(self):
-        if self.value + 2 <= self.end:
+        if self.value <= self.end:
+            t = self.value
             self.value += 2
-            return self.value
+            return t
         else:
             raise StopIteration
+
 
 en = EvenNumbers(10, 25)
 for i in en:
