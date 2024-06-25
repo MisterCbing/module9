@@ -15,6 +15,6 @@ class EvenNumbers():
         else:
             raise StopIteration
 
-en = EvenNumbers(30, 25)
+en = EvenNumbers(10, 25)
 for i in en:
     print(i)
